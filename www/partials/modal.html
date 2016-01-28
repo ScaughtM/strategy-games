@@ -1,0 +1,16 @@
+<div class="modal-header">
+    <h3 class="modal-title">{{title}}</h3>
+</div>
+<div class="modal-body">
+    <p>{{body}}</p>
+</div>
+<div ng-if="footer" class="modal-footer">
+    <button class="btn" ng-click="cancel()">{{footer}}</button>
+</div>
+<div ng-if="!footer" class="arrow-down"></div>
+<div ng-if="src" class="modal-portrait">
+    <img src="{{src}}">
+</div>
+<div ng-if="next" class="modal-action">
+    <button class="btn" ng-click="cancel()">{{next}} <span class="ion-arrow-right-a"></span></button>
+</div>

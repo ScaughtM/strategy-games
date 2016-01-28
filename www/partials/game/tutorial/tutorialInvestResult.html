@@ -1,0 +1,55 @@
+<div class="container">
+    <div class="heading">
+        <div class="title">
+            Investment Results
+        </div>
+    </div>
+    <div class="body">
+        <div class="section">
+            <h2>
+                Round: {{ thisRound }}
+            </h2>
+            <a class="sectInv">
+                Your Costs are Better Than:
+            </a>
+            <div ang:round:progress data-round-progress-model="data"></div>
+            <a class="sectInv">
+                Of The Possible Cost Functions
+            </a>
+        </div>
+        <div class="section">
+            <h2>Previously Researched Cost Function</h2>
+            <a class="btn large blue">{{ currentrd }}</a>
+        </div>
+        <div class="section">
+            <h2>New Cost Function</h2>
+            <a class="btn large blue">{{ gainedrd }}</a>
+        </div>
+        <div class="section">
+            <a href="#/tutorialCompPrompt" class="btn large">Continue to Competition Phase</a>
+        </div>
+
+        <!--Test code, displays stats for all ai tutorial opponents-->
+        <!--<div class="section">
+            <a>Name: {{ player1Name }}</a><br>
+            <a>Funds: {{ player1Funds }}</a><br>
+            <a>Cost: {{ player1Cost }}</a><br><br>
+
+            <a>Name: {{ player2Name }}</a><br>
+            <a>Funds: {{ player2Funds }}</a><br>
+            <a>Cost: {{ player2Cost }}</a><br><br>
+
+            <a>Name: {{ player3Name }}</a><br>
+            <a>Funds: {{ player3Funds }}</a><br>
+            <a>Cost: {{ player3Cost }}</a><br><br>
+
+            <a>Name: {{ player4Name }}</a><br>
+            <a>Funds: {{ player4Funds }}</a><br>
+            <a>Cost: {{ player4Cost }}</a><br><br>
+
+            <a>Name: {{ player5Name }}</a><br>
+            <a>Funds: {{ player5Funds }}</a><br>
+            <a>Cost: {{ player5Cost }}</a>
+        </div>-->
+    </div>
+</div>

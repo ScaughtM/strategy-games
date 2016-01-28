@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Strategy Games</title>
+    </head>
+    <body>
+
+        <!-- Content for the app proper -->
+        <div class="app">
+             <!--This example markup demonstrates the example html in the receivedEvent function in index.js-->
+            <!--<h1>Strategy Games</h1>-->
+            <!--<div id="deviceReady" class="blink">-->
+                <!--<p class="event listening">Loading...</p>-->
+                <!--<p class="event received" id="testSpot">Ready to play!</p>-->
+            <!--</div>-->
+            <div id="deviceReady">
+                <h1 class="event listening">
+                    Loading...
+                </h1>
+                <h1 class="event received">
+                    Loaded!
+                </h1>
+            </div>
+            <div class="" id="mainMenu">
+                <h1 id="mainMenuContent">The Main Menu</h1>
+            </div>
+        </div>
+
+        <!-- Javascript inclusions -->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/objects/player.js"></script>
+        <script type="text/javascript" src="js/objects/account.js"></script>
+        <script type="text/javascript" src="js/game.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+
+        <!-- initializes the application -->
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

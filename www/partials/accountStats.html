@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="heading">
+        <div class="title">
+            {{ acctName }}'s Stats
+        </div>
+    </div>
+    <div class="body">
+        <ul class="table">
+            <li class="row">
+                <div class="title">Games Played:</div>
+                <div class="result">{{ played }}</div>
+            </li>
+            <li class="row">
+                <div class="title">Total Global Revenue:</div>
+                <div class="result">{{ totalRev }}</div>
+            </li>
+            <li class="row">
+                <div class="title">Global Rank:</div>
+                <div class="result">{{ globRank }}</div>
+            </li>
+            <li class="row">
+                <div class="title">Games Won:</div>
+                <div class="result">{{ gWon }}</div>
+            </li>
+            <li class="row">
+                <div class="title">Games Lost:</div>
+                <div class="result">{{ gLost }}</div>
+            </li>
+        </ul>
+        <ul>
+            <li class="blue large">
+                <a href="#/leaderboard"> Leaderboard </a>
+            </li>
+        </ul>
+    </div>
+</div>

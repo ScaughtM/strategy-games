@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="heading">
+        <div class="title">
+            Settings
+        </div>
+    </div>
+    <div class="body">
+        <ul>
+            <li class="blue large"><a>Logout</a></li>
+            <li class="white large"><a ng-click="sound = !sound">
+                    Sound
+                    <span ng-if="sound" class="ion-android-volume-up"></span>
+                    <span ng-if="!sound" class="ion-android-volume-off red"></span>
+                </a>
+            </li>
+            <li class="large"><a>Rate my app</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--<div ng-controller="ModalController" id="ModalController">
+    <button class="btn btn-default" ng-click="open('investPrompt')">Open me!</button>
+</div>-->

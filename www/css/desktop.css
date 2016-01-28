@@ -1,0 +1,117 @@
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        margin: auto;
+    }
+    .container .heading {
+        left: 0;
+        box-shadow: 0px 2px 5px -1px rgba(0, 0, 50, 0.5);
+        padding-bottom: 15px;
+        padding-top: 50px;
+    }
+    .body {
+        padding-top: 125px;
+
+        padding-bottom: 100px;
+    }
+    .body .text-body p {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 1.75;
+    }
+    .body .text-body p strong {
+        font-size: 24px;
+        line-height: 1.75;
+    }
+    .container .heading .title,.container .heading .title h1 {
+        font-size: 27.5px;
+        font-weight: 400;
+    }
+    #logo img {
+        max-width: 400px;
+        display: block;
+        margin: auto;
+        padding: 5%;
+    }
+    #logo {
+        background-size: 300px auto;
+
+    }
+    #bkg {
+        display: none;
+    }
+    #main-nav {
+        padding: 5% 0;
+        width: auto;
+        max-width: 768px;
+        margin: auto;
+
+        margin-bottom: 50px;
+    }
+    #main-nav h1 {
+        font-size: 36px;
+        font-weight: normal;
+        margin-bottom: 25px;
+    }
+    #main-nav ul li a {
+        font-size: 18px;
+        line-height: initial;
+
+        padding: 15%;
+        font-weight: 400;
+        text-decoration: none;
+        box-shadow: 1px 5px 5px -2px rgba(0, 0, 0, 0.15);
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    }
+    #main-nav ul li {
+        width: 48%;
+        float: left;
+        margin: 1%;
+    }
+    #main-nav ul {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    #main-nav ul li a span {
+        display: block;
+
+        float: none;
+        line-height: 30px;
+        vertical-align: middle;
+        margin-left: 0;
+        font-size: 60px;
+        margin-top: 10px;
+        color: #80C7E3;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+        /* float: left; */
+    }
+    #main-nav ul li:hover a {
+        background: #222;
+        /*border: 1px solid #222;*/
+        box-shadow: 1px 7px 7px -3px rgba(0, 0, 0, 0.5);
+    }
+    div#icon-header {
+        position: fixed;
+        bottom: 0;
+        height: 50px;
+        background: #222;
+        padding: 0;
+        width: 100%;
+    }
+    div#icon-header ul {
+        padding: 0;
+        line-height: 50px;
+
+        width: 100%;
+    }
+    body ng-view {
+        /* padding-bottom: 50px; */
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+
+    }
+}

@@ -1,0 +1,42 @@
+<div id="animation">
+    <div id="investing" class="container">
+        <h2 class="loading-main {{specialClass}}">loading...</h2>
+        <div id="lab">
+            <div class="top">R&D</div>
+            <div id="windows" ng-class="{open:invest}">
+                <span><div ng-if="!lightpole" class="yellow"></div></span>
+                <span><div ng-if="!lightpole" class="yellow"></div></span>
+                <span></span>
+                <span><div ng-if="!lightpole" class="yellow"></div></span>
+                <span><div ng-if="!lightpole" class="yellow"></div></span>
+                <span><div ng-if="!lightpole" class="yellow"></div></span>
+                <span><div ng-if="!lightpole" class="yellow"></div></span>
+                <span><div ng-if="!lightpole" class="yellow"></div></span>
+                <span><div ng-if="!lightpole" class="yellow"></div></span>
+                <span></span>
+            </div>
+            <div id="bottom"></div>
+        </div>
+        <div id="player-hq" class="{{lightpole}}">
+            <div class="top">{{lclUser}}<br>HQ</div>
+            <div id="skylight">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div ng-if="invest" id="truck" ng-class="{on:onOff}">
+            <img ng-src="img/truck.png">
+        </div>
+        <div id="fund-progress">
+            <div class="container">
+                <h3 class="header">research</h3>
+                <span class="progress research" ng-style="{width : researchProgress}" ng-class="{off:!progress}"><p class="progressNum">${{researchProgressLoop}}</p></span>
+            </div>
+            <div class="container">
+                <h3 class="header">funds</h3>
+                <span class="progress funds" ng-style="{width : fundProgress}" ng-class="{off:!progress}"><p class="progressNum">${{fundProgressLoop}}</p></span>
+            </div>
+        </div>
+    </div>
+</div>

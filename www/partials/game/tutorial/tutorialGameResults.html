@@ -1,0 +1,107 @@
+<div class="container">
+    <div class="heading">
+        <div class="title">
+            Tutorial Game Results
+        </div>
+    </div>
+    <div class="body">
+        <div id="global-score">
+            <span>rank:</span>
+            <h1>{{ finalGameRank }}</h1>
+        </div>
+        <div class="section">
+            <a href="#/menu" class="btn large">Main Menu</a>
+            <a href="#/leaderboard" class="btn large">Global Leaderboard</a>
+        </div>
+        <div class="section">
+            <h2>Profit this game</h2>
+            <a class="btn large blue">${{ totalProfit }}</a>
+        </div>
+        <div class="section">
+            <h2>Total Global Revenue</h2>
+            <a class="btn large blue">${{ totalglobalrevenue }}</a>
+        </div>
+        <div class="section">
+            <h2>Game Leaderboard</h2>
+        </div>
+        <ul class="table">
+            <li class="row head">
+                <div class="col3">
+                    Rank
+                </div>
+                <div class="col3">
+                    Name
+                </div>
+                <div class="col3">
+                    Score
+                </div>
+            </li>
+            <li class="row">
+                <div class="col3">
+                    1
+                </div>
+                <div class="col3">
+                    {{ firstName }}
+                </div>
+                <div class="col3">
+                    {{ firstScore}}
+                </div>
+            </li>
+            <li class="row">
+                <div class="col3">
+                    2
+                </div>
+                <div class="col3">
+                    {{ secondName }}
+                </div>
+                <div class="col3">
+                    {{ secondScore }}
+                </div>
+            </li>
+            <li class="row">
+                <div class="col3">
+                    3
+                </div>
+                <div class="col3">
+                    {{ thirdName }}
+                </div>
+                <div class="col3">
+                    {{ thirdScore }}
+                </div>
+            </li>
+            <li class="row">
+                <div class="col3">
+                    4
+                </div>
+                <div class="col3">
+                    {{ fourthName }}
+                </div>
+                <div class="col3">
+                    {{ fourthScore }}
+                </div>
+            </li>
+            <li class="row">
+                <div class="col3">
+                    5
+                </div>
+                <div class="col3">
+                    {{ fifthName }}
+                </div>
+                <div class="col3">
+                    {{ fifthScore }}
+                </div>
+            </li>
+            <li class="row">
+                <div class="col3">
+                    6
+                </div>
+                <div class="col3">
+                    {{ sixthName }}
+                </div>
+                <div class="col3">
+                    {{ sixthScore }}
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

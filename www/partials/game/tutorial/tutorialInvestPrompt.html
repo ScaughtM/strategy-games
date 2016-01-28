@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="heading">
+        <div class="title">
+            R&amp;D Investment Phase
+        </div>
+    </div>
+    <div class="body">
+        <div class="section">
+            <h2>
+                Current Round: {{currentround}}
+            </h2>
+        </div>
+        <div class="section">
+            <h2>Current Cost Function</h2>
+            <a class="btn large blue">{{ rdlevel }}</a>
+        </div>
+        <div class="section">
+            <h2>R&amp;D Investment Cost</h2>
+            <a class="btn large blue">${{funds}} - $100,000 = ${{fundsaltered}}</a>
+            <h2>Want to Invest {{ name }}?</h2>
+            <a ng-click="getInvestmentResults(true)" type="investButton" class="btn large" id="invest">Invest</a>
+            <a ng-click="getInvestmentResults(false)" type="investButton" class="btn large" id="pass">Pass</a>
+        </div>
+    </div>
+</div>
+<invest-animation ng-show="animate" class="animate-if"></invest-animation>

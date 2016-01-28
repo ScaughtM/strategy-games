@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="heading">
+        <div class="title">
+            press continue to see results
+        </div>
+    </div>
+    <div class="body">
+        <ul id="group">
+            <li ng-class="{active:localUser.participate}">
+                <span class="ion-ios-home"></span>
+                <p class="name">{{localUser.localName}}</p>
+                <p ng-if="localUser.participate" class="status"><span class="green">open for business</span></p>
+                <p ng-if="!localUser.participate" class="status"><span class="red">shop closed</span></p>
+                <span ng-if="localUser.participate" class="ion-social-usd" ng-class="{bling:bling}"></span>
+            </li>
+            <li ng-repeat="user in currentGroup" ng-class="{active:user[3]}">
+                <span class="ion-ios-home"></span>
+                <p class="name">{{user[0]}}</p>
+                <p ng-if="user[3]" class="status"><span class="green">open for business</span></p>
+                <p ng-if="!user[3]" class="status"><span class="red">shop closed</span></p>
+                <span ng-if="user[3]" class="ion-social-usd" ng-class="{bling:bling}"></span>
+            </li>
+        </ul>
+        <div class="section">
+            <a ng-show="resume" href="#/tutorialCompResults" class="btn large" id="quitgamebtn">continue</a>
+        </div>
+    </div>
+</div>

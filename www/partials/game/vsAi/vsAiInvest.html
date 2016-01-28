@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="heading">
+        <div class="title">
+            Research &amp; Development
+        </div>
+    </div>
+    <div class="body">
+        <div class="section">
+            <h2>
+                Current Round: {{ currentround}}
+            </h2>
+        </div>
+        <div class="section">
+            <h2>Current R&amp;D</h2>
+            <a class="btn large blue">Level: {{ rdlevel }} </a>
+        </div>
+        <div class="section">
+            <h2>R&amp;D Cost</h2>
+            <a class="btn large blue">${{funds}} - $10000 = ${{fundsaltered}}</a>
+            <h2>Want to Invest {{ name }}?</h2>
+            <a href="#/playAIInvestResult" type="investButton" class="btn large" id="invest">Invest</a>
+            <a href="#/playAICompPrompt" type="investButton" class="btn large red" id="pass">Pass</a>
+        </div>
+
+    </div>
+</div>

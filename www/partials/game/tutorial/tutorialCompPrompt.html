@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="heading">
+        <div class="title">
+            Compete?
+        </div>
+    </div>
+    <div class="body">
+        <div class="section">
+            <h2>
+                Current Round: {{ currentround}}
+            </h2>
+        </div>
+        <div class="section">
+            <h2>Current Funds</h2>
+            <a class="btn large blue">${{ currentfunds }}</a>
+        </div>
+        <div class="section">
+            <h2>Current Cost Function</h2>
+            <a class="btn large blue">${{ costlvl }}</a>
+        </div>
+        <div class="section" id="compButtons">
+            <h2>Want to Compete, {{ name }}?</h2>
+            <a href="#/tutorialCompCalc" class="btn large partButtons" id="competeBtn">Compete</a>
+            <a href="#/tutorialCompCalc" class="btn large partButtons" id="passBtn">Pass</a>
+        </div>
+    </div>
+</div>
